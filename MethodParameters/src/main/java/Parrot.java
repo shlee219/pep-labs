@@ -14,8 +14,8 @@ public class Parrot {
     
 
 
-    public String copy(String text){
+    public String copy(String input){
         
-        return "return text please!";
+        return input;
     }
 }
