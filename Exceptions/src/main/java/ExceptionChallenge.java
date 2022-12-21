@@ -16,6 +16,8 @@ public class ExceptionChallenge {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow(){
+    public void mustThrow() throws NullPointerException{
+        String test = null;
+        test.toString();
     }
 }
