@@ -8,8 +8,10 @@ public class GetMax {
      */
     
     public int max(int[] arr){
+        //Set "largest" as first value in array "arr"
         int largest = arr[0];
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++){ 
+            //Skip the first iteration of looping through "arr", AND if current arr[i] is bigger than "largest"
             if (i != 0 && arr[i] > largest){
                 largest = arr[i];
             }
