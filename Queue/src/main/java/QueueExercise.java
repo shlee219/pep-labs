@@ -29,10 +29,10 @@ public class QueueExercise {
      * implements the Queue interface, such as ArrayDeque. Deques contain all the methods required for both Queue and
      * Stack behavior.
      */
-    
+   
     public Queue<String> createQueue(){
-        Queue<String> q = new PriorityQueue<String>();
-        return q;
+        Queue<String> queue = new PriorityQueue<String>();
+        return queue;
     }
 
     /**
