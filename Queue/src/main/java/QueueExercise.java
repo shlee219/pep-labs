@@ -3,7 +3,7 @@
  */
 
 import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Queues are FIFO - first in, first out, like a checkout line. They are used in algorithms where it is needed to keep
@@ -31,7 +31,7 @@ public class QueueExercise {
      */
    
     public Queue<String> createQueue(){
-        Queue<String> queue = new PriorityQueue<String>();
+        Queue<String> queue = new LinkedList<String>();
         return queue;
     }
 
