@@ -23,7 +23,7 @@ public class BankService {
      * @param amount the amount to be deposited.
      */
     public void deposit(double amount){
-
+        balance = balance + amount;
     }
 
     /**
@@ -32,7 +32,13 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-
+        
+        if( balance - amount < 0){
+            System.out.println("You cannot withdraw that much!");
+        }
+        else{
+            balance = balance - amount;
+        }
     }
 
     /**
