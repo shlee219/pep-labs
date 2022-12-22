@@ -31,7 +31,7 @@ public class QueueExercise {
      */
    
     public Queue<String> createQueue(){
-        Queue<String> queue = new LinkedList<String>();
+        ArrayDeque<String> queue = new ArrayDeque<String>();
         return queue;
     }
 
