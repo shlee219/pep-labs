@@ -10,12 +10,15 @@ public class IsSorted {
      */
     
     public boolean checkSort(int[] arr){
+        //Create array with same length as "arr"
         int[] arrOld = new int[arr.length];
 
+        //Copy content of "arr" into "arrOld"
         for (int k = 0; k < arr.length; k++) {
             arrOld[k] = arr[k];
         }
 
+        //Sort "arr"
         for (int i = 1; i < arr.length; i++) {
 
             for (int j = 0; j < arr.length; j++) {
@@ -27,6 +30,8 @@ public class IsSorted {
                 }
             }
         }
+
+        //Compare "arr" and "arrOld"
         if (Arrays.equals(arr, arrOld)) {
             System.out.println(Arrays.toString(arrOld));
             System.out.println(Arrays.toString(arr));
