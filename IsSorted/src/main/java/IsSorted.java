@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 public class IsSorted {
     /**
@@ -8,8 +8,14 @@ public class IsSorted {
      * @param arr an int array
      * @return true if arr is sorted (all the numbers are in order). false if arr is not sorted.
      */
+    
     public boolean checkSort(int[] arr){
-        int[] arrOld = arr;
+        int[] arrOld = new int[arr.length];
+
+        for (int k = 0; k < arr.length; k++) {
+            arrOld[k] = arr[k];
+        }
+
         for (int i = 1; i < arr.length; i++) {
 
             for (int j = 0; j < arr.length; j++) {
@@ -21,14 +27,15 @@ public class IsSorted {
                 }
             }
         }
-            if( arrOld == arr){
-                return true;
-            }
-            else{
-                return false;
-            }
-            
+        if (Arrays.equals(arr, arrOld)) {
+            System.out.println(Arrays.toString(arrOld));
+            System.out.println(Arrays.toString(arr));
+            return true;
+        } else {
+            System.out.println(Arrays.toString(arrOld));
+            System.out.println(Arrays.toString(arr));
+            return false;
         }
-       
     }
+}
 
