@@ -40,12 +40,12 @@
     :git_user_name: Shihyun Lee
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 5
+  :count_tests_passed: 4
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 5
+  :count_tests_passed: 4
   Start:
     :Week: 1
     :Order: 1
@@ -784,7 +784,7 @@
     :Order: 6
     :Type: challenge
     :count_tests: 4
-    :count_tests_passed: 5
+    :count_tests_passed: 4
     :tests:
       containsDuplicatesTest1: 1
       containsDuplicatesTest2: 1
