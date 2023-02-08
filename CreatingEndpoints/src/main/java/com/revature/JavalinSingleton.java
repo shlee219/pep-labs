@@ -13,7 +13,7 @@ public class JavalinSingleton {
      */
     public static Javalin getInstance(){
         Javalin app = Javalin.create();
-        app.start(9000);
+        //app.start(9000);
 
         app.get("/hello", ctx -> {
             ctx.result("Hello World");
