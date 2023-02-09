@@ -58,33 +58,23 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
-    public boolean equals(int a, boolean b)
-    {
-         this.a = a;
-         this.b = b;
-        // if (a == a && b == b){
-        //     return true;
-
-        // }
-        // else{
-        //     return false;
-        // }
-
-        if((Objects.deepEquals(a, a) == true) && (Objects.deepEquals(b, b) == true))
-        {
+    public boolean equals(Object obj) {
+        if (obj == this) {
             return true;
         }
-        else{
+
+        if (!(obj instanceof SampleClass)) {
             return false;
         }
+
+        SampleClass other = (SampleClass) obj;
+        return this.a == other.a && this.b == other.b;
     }
 
 
 
-    // //    implement a custom .toString(){} method here.
-    // public String toString()
-    // {
-        
-    // }
+    public String toString() {
+        return "SampleClass[a=" + a + ", b=" + b + "]";
+    }
     
 }
